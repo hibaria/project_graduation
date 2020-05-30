@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <!--加载驱动类-->
+        <property name="driverClassName" value="com.mysql.cj.jdbc.Driver"/>
+        <!--数据库访问地址-->
+        <property name="url" value="jdbc:mysql://localhost:3306/db_barrageproject?serverTimezone=UTC"/>
+        <!--数据库访问用户名-->
+        <property name="username" value="root"/>
+        <!--数据库访问密码-->
+        <property name="password" value="123456"/>
+    </bean>
+    <!-- 创建数据源 c3p0 设置驱动，数据库连接，账号，密码-->
+<!--    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">-->
+<!--        <property name="driverClass" value="com.mysql.cj.jdbc.Driver"/>-->
+<!--        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/db_barrageproject?serverTimezone=UTC"/>-->
+<!--        <property name="user" value="root"/>-->
+<!--        <property name="password" value="123"/>-->
+<!--    </bean>-->
+
+    <!-- spring 提供的数据库事务管理 -->
+    <bean id="txManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+    <tx:annotation-driven transaction-manager="txManager"/>
+    <!-- 配置javaBean实体类 -->
+    <bean id="barrageBean" class="com.javabean.Barrage">
+    </bean>
+    <bean id="videoBean" class="com.javabean.Video">
+    </bean>
+    <bean id="smallProgramBarrage" class="com.javabean.SmallProgramBarrage">
+    </bean>
+    <bean id="smallProgramBarrage2" class="com.javabean.SmallProgramBarrage2">
+    </bean>
+    <bean id="shieldingBean" class="com.javabean.Shielding">
+    </bean>
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <constructor-arg ref="dataSource"/>
+    </bean>
+    <!-- dao层类 -->
+    <bean id="videoDao" class="com.dao.VideoDao">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+    <bean id="dao" class="com.dao.BarrageDao">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+    <bean id="shieldingDao" class="com.dao.ShieldingDao">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+    <bean id="styleInfoDao" class="com.dao.StyleInfoDao">
+        <property name="jdbcTemplate" ref="jdbcTemplate"/>
+    </bean>
+</beans>

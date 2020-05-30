@@ -1,0 +1,47 @@
+.page-section {
+  margin-top: 200rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 50rpx;
+  box-sizing: border-box;
+}
+
+.page-body-title {
+  font-size: 32rpx;
+  line-height: 60rpx;
+}
+
+.page-body-text {
+  color: #bbb;
+  font-size: 30rpx;
+  width: 78%;
+  line-height: 40rpx;
+  margin: 0 0 100rpx 0;
+  text-align: center;
+}
+
+.login-btn {
+  width:80%;
+  background-color: #04be01;
+  margin-bottom: 20rpx;
+  color: white;
+  font-weight: normal;
+}
+
+.login-btn-hover {
+  background-color: rgb(3, 167, 0);
+}
+
+.logout-btn {
+  width: 80%;
+  background: white;
+  font-weight: normal;
+  color: rgb(50, 50, 50);
+}
+
+.logout-btn-hover {
+  background: #f3f3f3;
+}

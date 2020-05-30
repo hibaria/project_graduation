@@ -1,0 +1,27 @@
+<!--miniprogram/pages/user/index.wxml-->
+<view class="header flex-col" >
+  <image class="avatar"  bindtap='gotoLogin' src="{{userInfo.avatarUrl}}"></image>
+  <text class="nickname"  bindtap='gotoLogin' >{{userInfo.name}}</text>
+</view>
+
+
+<view class="content flex-row" bindtap="toHistory">
+  <image src="../../images/user/icon1.png" class="sm-img1"></image>
+  <text>已发弹幕</text>
+  <image src="../../images/user/right.png" class="sm-img pull-right"></image>
+</view>
+<view class="content flex-row" bindtap="toCostRecord">
+  <image src="../../images/user/icon2.png" class="sm-img1"></image>
+  <text>消费</text>
+  <image src="../../images/user/right.png" class="sm-img pull-right"></image>
+</view>
+<view class="content flex-row" bindtap="toFeedback">
+  <image src="../../images/user/icon3.png" class="sm-img1"></image>
+  <text>联系我们</text>
+  <image src="../../images/user/right.png" class="sm-img pull-right"></image>
+</view>
+<view class="content flex-row" bindtap="toLogout">
+  <image src="../../images/user/icon4.png" class="sm-img1"></image>
+  <text>退出登录</text>
+  <image src="../../images/user/right.png" class="sm-img pull-right"></image>
+</view>

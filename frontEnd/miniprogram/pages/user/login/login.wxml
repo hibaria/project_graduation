@@ -1,0 +1,6 @@
+  <view class="page-section">
+      <text class="page-body-title">是否登录微信小程序“星弹幕”？</text>
+      <text class="page-body-text">星弹幕将获得您的公开信息（昵称、头像等）授权</text>
+      <button class="login-btn" hoverClass="login-btn-hover" bindgetuserinfo="getUserInfo" open-type="getUserInfo">微信登录</button>
+      <button class="logout-btn" hoverClass="logout-btn-hover" bindtap="cancel">取消</button>
+  </view>

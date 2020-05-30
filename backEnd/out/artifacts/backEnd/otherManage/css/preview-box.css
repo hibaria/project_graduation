@@ -1,0 +1,259 @@
+/*示例框*/
+.body-style {
+    display: flex;
+    width: 60%;
+    margin: 60px 0;
+}
+
+/*底图-文字样式*/
+.body-style-container {
+    height: 400px;
+    width: 70%;
+    background: url("../../img/Christmas-Tree.jpg") no-repeat;
+    border-radius: 5%;
+    background-size:100% 100%;
+}
+/*底色-表情样式*/
+.body-style-container-emoji {
+    height: 600px;
+    width: 50%;
+    background: #ededed;
+    border-radius: 5%;
+    background-size:100% 100%;
+}
+/*底色-图片样式*/
+.body-style-container-img {
+    height: 600px;
+    width: 50%;
+    background: #ededed;
+    border-radius: 5%;
+    background-size:100% 100%;
+}
+.body-adjustment-container {
+    width: 30%;
+    margin: 0 auto;
+}
+.body-adjustment-container2 {
+    width:40%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+/*左右两边的遮罩*/
+.body-style-mask {
+    height: 600px;
+    width: 25%;
+    background: white;
+    margin: 0;
+    z-index: 5
+}
+/*小号气泡*/
+.bubble-preview-exm1 {
+    opacity: 0.75;
+    background: #23cd97;
+    position: relative;
+    border-radius: 10px;
+    animation: exm1 4s infinite;
+    animation-timing-function: linear;
+    z-index: 2;
+    width: fit-content;
+    width: -moz-fit-content;
+    padding: 5px;
+}
+@keyframes exm1 {
+    from {
+        transform: translate(400px, 100px);
+    }
+    to {
+        transform: translate(-100px, 100px);
+    }
+}
+
+.bubble-exm1-ava {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.bubble-exm1-name {
+    color: white;
+    font-size: 14px;
+}
+
+.bubble-exm1-text {
+    color: white;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+
+/*大号气泡*/
+.bubble-preview-exm2 {
+    opacity: 0.75;
+    background: #23d69e;
+    padding: 10px;
+    position: relative;
+    border-radius: 10px;
+    animation: exm2 5s infinite;
+    animation-timing-function: linear;
+    z-index: 2;
+    width: fit-content;
+    width: -moz-fit-content;
+}
+@keyframes exm2 {
+    from {
+        transform: translate(300px, 130px);
+    }
+    to {
+        transform: translate(-50px, 130px);
+    }
+}
+
+.bubble-exm2-ava {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.bubble-exm2-name {
+    color: white;
+    font-size: 20px;
+}
+
+.bubble-exm2-text {
+    color: white;
+    font-size: 24px;
+    padding-right: 10px;
+}
+
+.exm-normal-text {
+    color: white;
+    font-weight: bolder;
+    font-size: 26px;
+    line-height: 10px;
+    text-shadow: -0.7px -0.7px 0 #000,
+    0.7px -0.7px 0 #000,
+    -0.7px 0.7px 0 #000,
+    0.7px 0.7px 0 #000;
+    opacity: 0.75;
+
+}
+
+.exm-normal-text.an1 {
+    animation: an1 5s infinite;
+    animation-timing-function: linear;
+}
+@keyframes an1 {
+    from {
+        transform: translate(200px, 20px);
+    }
+    to {
+        transform: translate(-100px, 20px);
+    }
+}
+
+.exm-normal-text.an2 {
+    animation: an2 4.5s infinite;
+    animation-timing-function: linear;
+}
+@keyframes an2 {
+    from {
+        transform: translate(300px, 65px);
+    }
+    to {
+        transform: translate(-105px, 65px);
+    }
+}
+
+.exm-normal-text.an3 {
+    animation: an3 5s infinite;
+    animation-timing-function: linear;
+}
+@keyframes an3 {
+    from {
+        transform: translate(250px, 105px);
+    }
+    to {
+        transform: translate(-105px, 105px);
+    }
+}
+
+.exm-normal-text.an4 {
+    animation: an4 5s infinite;
+    animation-timing-function: linear;
+}
+@keyframes an4 {
+    from {
+        transform: translate(300px, 150px);
+    }
+    to {
+        transform: translate(-105px, 150px);
+    }
+}
+
+.exm-normal-text.an5 {
+    animation: an5 4.7s infinite;
+    animation-timing-function: linear;
+}
+@keyframes an5 {
+    from {
+        transform: translate(400px, 190px);
+    }
+    to {
+        transform: translate(-105px, 190px);
+    }
+}
+
+.exm-normal-text.an6 {
+    animation: an6 3s infinite;
+    animation-timing-function: linear;
+}
+@keyframes an6 {
+    from {
+        transform: translate(200px, 225px);
+    }
+    to {
+        transform: translate(-105px, 225px);
+    }
+}
+
+.exm-normal-text.an7 {
+    animation: an7 3s infinite;
+    animation-timing-function: linear;
+}
+@keyframes an7 {
+    from {
+        transform: translate(400px, 260px);
+    }
+    to {
+        transform: translate(-105px, 260px);
+    }
+}
+
+.exm-normal-text.an8 {
+    animation: an8 5s infinite;
+    animation-timing-function: linear;
+}
+@keyframes an8 {
+    from {
+        transform: translate(300px, 300px);
+    }
+    to {
+        transform: translate(-105px, 300px);
+    }
+}
+
+
+
+.button-submit {
+    height: 50px;
+    margin-top: 20px;
+    width: 75%;
+    background: #ffba5a;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    font-size: 16px;
+}

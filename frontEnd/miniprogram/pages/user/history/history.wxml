@@ -1,0 +1,4 @@
+<!--pages/mine/history/history.wxml-->
+  <view wx:for="{{barragelist}}" wx:key="navItems" class='content flex-row'>
+    <text class="textStyle">{{item.content}}</text>
+  </view>

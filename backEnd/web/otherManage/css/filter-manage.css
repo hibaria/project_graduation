@@ -1,0 +1,156 @@
+.button-add {
+    margin-left: 680px;
+    width: 130px;
+    align-items: center;
+    height: 30px;
+    background: dodgerblue;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+
+.button-add:hover {
+    background: #196bc6;
+}
+
+
+/*表格*/
+.table-div{
+    padding-top:20px;
+}
+.table-tr {
+    border: 1px #cecece solid;
+    background: #9ca9ab;
+    height: 60px;
+    color: white;
+}
+
+.table-th-1 {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.table-th-2 {
+    border-left: 1px #cecece solid;
+    text-align: center;
+}
+
+.table-tr-2 {
+    height: 50px;
+    color: #646464;
+    font-size: 14px;
+}
+.table-tr-2:hover{
+    background: #f3f3f3;
+}
+
+.table-td-1 {
+    border-top: 1px #cecece solid;
+    padding-left: 20px;
+}
+
+.table-td-2 {
+    border-left: 1px #cecece solid;
+    border-top: 1px #cecece solid;
+}
+
+.btn-del {
+    font-size: 12px;
+    margin: 0 50px;
+    height: 30px;
+    width: 90px;
+    background: #ed756c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.btn-del:hover {
+    background: #d45355;
+}
+
+
+/*遮罩*/
+.div-cover {
+    background: #000;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    filter: alpha(opacity=30);
+    opacity: 0.3;
+    display: none;
+    z-index: 12;
+}
+
+/*弹框*/
+.div-show {
+    width: 60%;
+    margin: 0 auto;
+    height: 400px;
+    border: 1px solid #999;
+    display: none;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    z-index: 13;
+    background: #fff;
+}
+
+.div-show-title {
+    width: 80%;
+    margin: 0 auto;
+    height: 5rem;
+    font-size: 16px;
+    line-height: 5rem;
+    font-weight: bolder;
+}
+
+.div-show-content {
+    width: 80%;
+    margin: 0 auto;
+    height: 250px;
+    border: 1px #bfbfbf solid;
+}
+
+.div-show-input {
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.div-show-button {
+    width: 170px;
+    display: flex;
+    margin: 10px auto;
+    height: 40px;
+    /*margin-top: 1rem;*/
+    -moz-border-radius: .128rem;
+    -webkit-border-radius: .128rem;
+    border-radius: .128rem;
+    font-size: .59733rem;
+}
+
+.div-show-confirm {
+    background: #418BCA;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    height: 40px;
+    width: 80px;
+    border: none;
+}
+
+.div-show-cancel {
+    margin-left: 10px;
+    background: #c4c4c4;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    height: 40px;
+    width: 80px;
+    border: none;
+}

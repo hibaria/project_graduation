@@ -1,0 +1,18 @@
+/* pages/mine/history/history.wxss */
+Page{
+    background: #f3f3f3;
+}
+
+.content{ 
+  padding: 20px 5% 20px 5%;
+  border-top: 5px solid #f3f3f3;
+  color: rgb(50, 50, 50);
+  font-size: 14px; 
+  width: 90%;
+  background: white;
+}
+.textStyle{
+width:90%;
+word-break: keep-all;
+word-wrap: break-word
+}

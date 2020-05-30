@@ -1,0 +1,77 @@
+input[type="range"] {
+    -webkit-appearance: none; /*去除默认样式*/
+    background-color: #ebeff4;
+    border-radius: 20px;
+    width: 75% !important;
+    height:4px;
+    margin: 0;
+    padding: 0;
+    border-color: transparent; /*去除原有边框*/
+    color: transparent; /*去除轨道内的竖线*/
+    /*input的长度为80%，margin-left的长度为10%*/
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;/*去除默认样式*/
+    cursor: default;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    transform: translateY(0px);
+    /*background: none repeat scroll 0 0 #5891f5;*/
+    background: #fff;
+    border-radius: 15px;
+    border: 5px solid #2c7873;
+    /*-webkit-box-shadow: 0 -1px 1px #fc7701 inset;*/
+}
+label{
+    line-height: 25px;
+    margin: 8px 40px 5px 5px;
+    display: inline-block;
+}
+/*单选样式*/
+input[type="radio"]{
+    width: 20px;
+    height:20px;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    position: relative;
+    margin: 0;
+
+}
+input[type="radio"]:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid #2c7873;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+input[type="radio"]:checked:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid #2c7873;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin-bottom: 3px;
+}
+input[type="radio"]:checked:after{
+    content: '';
+    width: 12px;
+    height: 12px;
+    text-align: center;
+    background:#2c7873;
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    top: 6px;
+    left: 6px;
+}
+input[type="radio"]:checked+label{
+    color: #2c7873;
+    font-weight: bolder;
+}

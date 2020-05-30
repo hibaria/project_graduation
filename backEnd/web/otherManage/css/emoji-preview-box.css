@@ -1,0 +1,96 @@
+.preview-exm-emoji1 {
+    width: 60px;
+    height: 60px;
+    animation: ani1 5s infinite;
+    animation-timing-function: linear;
+}
+@keyframes ani1 {
+    0% {
+        transform: translate(800px, 200px);
+    }
+    50% {
+        transform: translate(350px, 480px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+.preview-exm-emoji2 {
+    width: 60px;
+    height: 60px;
+    animation: ani2 5s infinite;
+    animation-timing-function: linear;
+}
+@keyframes ani2 {
+    from {
+        transform: translate(800px, 200px);
+    }
+    to {
+        transform: translate(-50px, 200px);
+    }
+}
+.preview-exm-emoji3{
+    width: 60px;
+    height: 60px;
+    animation: ani3 5s infinite;
+    animation-timing-function: linear;
+}
+@keyframes ani3{
+    from {
+        transform: translate(-50px, 200px);
+    }
+    to {
+        transform: translate(800px, 200px);
+    }
+}
+.preview-exm-emoji4 {
+    width: 60px;
+    height: 60px;
+    margin:10px 45%;
+    animation: ani4 3s infinite;
+    animation-timing-function: linear;
+    transform-origin: center center;
+}
+@keyframes ani4 {
+    0% {
+        transform: rotate(35deg);
+    }
+    50% {
+        transform: rotate(-35deg);
+    }
+    100% {
+        transform: rotate(35deg);
+    }
+}
+
+.preview-emoji-img {
+    opacity:1;
+    width: 60px;
+    height: 60px;
+}
+
+/*下边儿调整区的样式*/
+.body-adjustment-container-emoji {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+/*保存按钮*/
+.button-submit-container {
+    width: 40%;
+    position: fixed;
+    bottom: 20px;
+    left: 35%;
+    z-index: 6;
+}
+
+.button-submit {
+    height: 50px;
+    width: 100%;
+    background: #ffba5a;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    font-size: 16px
+}

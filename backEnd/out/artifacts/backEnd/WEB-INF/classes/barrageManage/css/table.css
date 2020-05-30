@@ -1,0 +1,103 @@
+.hovertable{
+    font-size: 12px;
+    margin: 0;
+    border-collapse: collapse;
+    /*text-align: center;*/
+    font-weight: normal;
+    border: #e5e9ef 1px solid;
+    /*box-shadow: 2px 2px 5px 0 #e4e4e4;*/
+}
+
+.hovertable th {
+    color: #222222;
+    height: 40px;
+    background-color: #f4f5f7;
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #e5e9ef;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    text-align: left;
+}
+
+.hovertable tr {
+    background-color: #ffffff;
+}
+.hovertable tr:nth-child(odd){
+    background: #fafafa;
+}
+.hovertable tr:hover{
+    background: #f3f3f3;
+}
+
+.hovertable td {
+    height: 60px;
+    margin: 0;
+    color: #6d757a;
+    border-width: 1px;
+    padding: 5px;
+    border-style: solid;
+    border-color: #e5e9ef;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.btn1{
+    font-size: 12px;
+    margin: 0 5px;
+    height: 30px;
+    width: 60px;
+    background: #23d69e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.btn1:hover{
+    background: #21ca95;
+}
+
+.btn2{
+    font-size: 12px;
+    margin: 0 5px;
+    height: 30px;
+    width: 60px;
+    background: #d8d8d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+}
+.btn2:hover{
+    background: #aeaeae;
+}
+
+.table-checkbox{
+    background: white;
+    border: 1px solid #ccd0d7;
+    border-radius: 5px;
+    height: 10px;
+    width: 10px;
+
+}
+
+.btn3{
+    font-size: 12px;
+    margin: 0 5px;
+    height: 30px;
+    width: 60px;
+    background: #ed756c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+
+}
+.btn3:hover{
+    background: #d45355;
+}
+/*图片预览背后蒙版*/
+.over {position: fixed; left:0; top:0; width:100%; z-index:100;}
+.tempContainer {position:fixed; width:100%; margin-right:0px; margin-left:0px; text-align:center; z-index:101;}
+

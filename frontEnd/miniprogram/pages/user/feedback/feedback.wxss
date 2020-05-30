@@ -1,0 +1,43 @@
+/* miniprogram/pages/mine/feedback/feedback.wxss */
+.feedbackInput{
+  position: fixed;
+  top: 30px;
+  left: 7%;
+  width: 84%;
+  height: 180px;
+  color:#a8a8a8;
+  font-size: 14px; 
+}
+.placeholder{
+  color:#d6d6d6;
+
+}
+.btnArea{
+  width: 100%;
+  position: fixed;
+  bottom:0px;
+  height: 48px;
+  line-height:2.55555556;
+}
+.btn {
+  width: 100%;
+  font-weight: normal;
+  font-size: 14px; 
+  border-radius: 0rpx;
+  background-color: #23D69E;
+  color: #FFF;
+}
+.btn::after {
+  border: 0; 
+}
+
+.frame{
+  position: fixed;
+  width: 90%;
+  top:20px;
+  left: 5%;
+  height:200px;
+  font-weight: normal;
+  font-size: 14px; 
+  border:1px solid #e3e3e3;
+}

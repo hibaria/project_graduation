@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/live/index",
+    "pages/user/index",
+    "pages/user/login/login",
+    "pages/user/cost/cost",
+    "pages/user/history/history",
+    "pages/user/feedback/feedback"
+  ],
+  "window": {
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "星弹幕",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#353535",
+    "selectedColor": "#23D69E",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/live/index",
+        "iconPath": "images/navigateBar_live.png",
+        "selectedIconPath": "images/navigateBar_live2.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "iconPath": "images/navigateBar_user.png",
+        "selectedIconPath": "images/navigateBar_user2.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 120000,
+    "downloadFile": 120000
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

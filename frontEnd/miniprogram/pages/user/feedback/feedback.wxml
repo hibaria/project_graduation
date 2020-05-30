@@ -1,0 +1,10 @@
+<!--miniprogram/pages/mine/feedback/feedback.wxml-->
+
+<form>
+  <view class="frame">
+    <textarea class="feedbackInput" name="feedbackInput" placeholder="请描述您遇到的问题" maxlength="-1" disabled="{{modalName!=null}}" placeholder-class='placeholder'></textarea>
+  </view>
+  <view class="btnArea">
+  <button class='btn' bindtap="submit">发送</button>
+  </view>
+</form>
